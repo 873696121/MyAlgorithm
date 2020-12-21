@@ -23,6 +23,7 @@ void add(int a, int b){
     e[idx] = b, ne[idx] = h[a], h[a] = idx ++;
 }
 
+// 匈牙利算法裸题
 bool find(int u){
     for(int i = h[u]; ~i; i = ne[i]){
         int j = e[i];
